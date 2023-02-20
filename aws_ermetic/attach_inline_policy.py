@@ -3,7 +3,7 @@ import global_var
     
 
 
-role_name = "ErmeticRole"
+role_name = global_var.role_name
 policy_arn = "arn:aws:iam::"+ global_var.account_id +":policy/ErmeticReadOnlyPolicy"
 
 def attach_iam_policy(policy_arn, role_name):

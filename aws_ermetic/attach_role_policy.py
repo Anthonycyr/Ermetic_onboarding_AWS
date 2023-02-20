@@ -1,6 +1,7 @@
 import boto3
+import global_var
 
-role_name = "ErmeticRole"
+role_name = global_var.role_name
 policy_arn = "arn:aws:iam::aws:policy/SecurityAudit"
     
 

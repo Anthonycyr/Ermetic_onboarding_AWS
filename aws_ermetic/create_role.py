@@ -26,7 +26,7 @@ def create_iam_role():
     })
     response = iam.create_role(
         Path = "/", 
-        RoleName = "ErmeticRole",
+        RoleName = global_var.role_name,
         AssumeRolePolicyDocument = assume_role_policy_document,
     )
     print(response)

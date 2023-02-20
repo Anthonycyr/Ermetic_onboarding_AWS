@@ -20,7 +20,7 @@ print("------Create trails------")
 print(" ")
 import create_trail
 import global_var
-print("ErmeticRole")
+print(global_var.role_name)
 print(global_var.role_arn)
 print(" ")
 print("Ermetic is onboard!")

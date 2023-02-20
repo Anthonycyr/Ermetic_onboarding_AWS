@@ -134,7 +134,7 @@ def create_iam_policy():
     ]
     }
     response = iam.create_policy(
-        PolicyName='ErmeticReadOnlyPolicy',
+        PolicyName='ErmeticReadOnlyPolicy_test',
         PolicyDocument=json.dumps(my_managed_policy)
     )
     print(response)
