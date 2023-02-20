@@ -122,8 +122,8 @@ def create_iam_policy():
         ],
         "Resource":[
             "arn:aws:s3:::elasticbeanstalk-*",
-            global_var.bucket_name,
-            global_var.bucket_name + "/*"
+            "arn:aws:s3:::{global_var.bucket_name}",
+            "arn:aws:s3:::{global_var.bucket_name}/*"
         ] 
         },
         {
