@@ -15,8 +15,8 @@ account_id = get_account_id()
 region = "ca-central-1"
 external_id = "25b1295f-19eb-4614-ae75-e6b3833c9cd0"
 ermetic_account_id = "081802104111"
-trail_name = 'Ermetic_trail_test'
-role_name = "ErmeticRole_test"
+trail_name = 'Ermetic_trail'
+role_name = "ErmeticRole"
 role_arn = f"arn:aws:iam::{account_id}:role/{role_name}"
 bucket_name = f"aws-cloudtrail-logs-ermetic-{account_id}"
 
