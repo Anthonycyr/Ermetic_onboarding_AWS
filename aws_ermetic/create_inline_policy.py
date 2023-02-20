@@ -1,5 +1,6 @@
 import json
 import boto3
+import global_var
 
 def create_iam_policy():
     # Create IAM client
@@ -121,8 +122,8 @@ def create_iam_policy():
         ],
         "Resource":[
             "arn:aws:s3:::elasticbeanstalk-*",
-            "arn:aws:s3:::aws-cloudtrail-logs-ermetic",
-            "arn:aws:s3:::aws-cloudtrail-logs-ermetic/*"
+            global_var.bucket_name,
+            global_var.bucket_name + "/*"
         ] 
         },
         {

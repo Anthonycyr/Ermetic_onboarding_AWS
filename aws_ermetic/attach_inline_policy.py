@@ -1,18 +1,10 @@
 import boto3
-
+import global_var
     
-def get_account_id():
-    client = boto3.client("sts")
-    return client.get_caller_identity()["Account"]
 
-
-if __name__ == "__main__":
-    print(get_account_id())
-
-account_id = get_account_id()
 
 role_name = "ErmeticRole"
-policy_arn = "arn:aws:iam::"+ account_id +":policy/ErmeticReadOnlyPolicy"
+policy_arn = "arn:aws:iam::"+ global_var.account_id +":policy/ErmeticReadOnlyPolicy"
 
 def attach_iam_policy(policy_arn, role_name):
     iam = boto3.client("iam")
