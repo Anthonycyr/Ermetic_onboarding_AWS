@@ -32,21 +32,5 @@ def create_bucket():
     print(response)
     return response
 
-# def put_bucket_encryption():
-#     response = client.put_bucket_encryption(
-#     Bucket= global_var.bucket_name,
-#     ServerSideEncryptionConfiguration={
-#         'Rules': [
-#             {
-#                 'ApplyServerSideEncryptionByDefault': {
-#                     'SSEAlgorithm': 'AES256'
-#                 },
-#             },
-#         ]
-#     })
-
-#     return response
-    
 
 create_bucket()
-# put_bucket_encryption()
