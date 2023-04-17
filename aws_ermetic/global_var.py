@@ -13,7 +13,7 @@ if __name__ == "__main__":
 id = get_account_id()
 account_id = get_account_id()
 region = "ca-central-1"
-external_id = "25b1295f-19eb-4614-ae75-e6b3833c9cd0"
+external_id = "617de4fc-5c29-4695-bff9-37cdb2f800ef"
 ermetic_account_id = "081802104111"
 trail_name = 'Ermetic_trail'
 role_name = "ErmeticRole"
